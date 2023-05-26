@@ -1,0 +1,7 @@
+@mixin gradient-blue-light {
+    background: linear-gradient(50deg, #4EA6FF 15%, #00478F 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
