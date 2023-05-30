@@ -254,6 +254,7 @@ header{
         color: black;
         cursor: pointer;
 
+        //Máscara de lupa en hover
         &:hover{
             -webkit-mask-image: url(../recursos/nav_menu/lupa-producto.png);
             mask-image: url(../recursos/nav_menu/lupa-producto.png);
