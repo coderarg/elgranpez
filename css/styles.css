@@ -11,6 +11,7 @@
   --naranja-1: #FF5C00;
   --azul-1: #00478F;
   --azul-2: #006EFF;
+  --negro-1: #272727;
 }
 
 header {
@@ -241,7 +242,14 @@ header {
   cursor: pointer;
 }
 .producto__img:hover {
-  opacity: 0.8;
+  -webkit-mask-image: url(../recursos/nav_menu/lupa-producto.png);
+  mask-image: url(../recursos/nav_menu/lupa-producto.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 70%;
+  -webkit-mask-size: 70%;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
 }
 .producto__titulo {
   padding: 0px 15px;
@@ -258,7 +266,7 @@ header {
 }
 
 .paginador {
-  margin: auto;
+  margin: 40px auto;
   width: 720px;
   display: flex;
   justify-content: space-between;
@@ -272,12 +280,67 @@ header {
   font-size: 20px;
   font-weight: 800;
 }
-.paginador .pagina-1 {
-  border: 3px solid black;
+.paginador .active {
+  border: 3px solid transparent;
   padding: 3px 15px;
-  border-radius: 50%;
-  background-color: #FF5C00;
+  border-radius: 7px;
+  background-color: var(--naranja-1);
   color: white;
+}
+
+footer {
+  background-color: var(--negro-1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.footer {
+  width: 80%;
+  margin: 50px auto 30px auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  height: 80px;
+}
+.footer__container {
+  text-decoration: none;
+  color: white;
+  font-family: Oswald-Regular;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.footer__titulo {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.footer__icono {
+  height: 30px;
+  margin-right: 10px;
+}
+.footer__info {
+  margin-left: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
+}
+.footer__rrss--icono {
+  margin: 10px;
+}
+.footer__creacion {
+  margin: 30px auto;
+  text-decoration: none;
+  color: white;
+  font-family: Oswald-Regular;
+  font-size: 25px;
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=styles.css.map */

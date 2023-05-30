@@ -6,11 +6,11 @@
     src: url(../recursos/tipografia/static/Oswald-Regular.ttf);
 }
 
-:root {
+:root{
     --naranja-1: #FF5C00;
     --azul-1: #00478F;
     --azul-2: #006EFF;
-    
+    --negro-1: #272727;
 }
 
 header{
@@ -30,7 +30,7 @@ header{
     align-items: center;
     margin: 50px auto 30px auto;
 
-    &__logo {
+    &__logo{
         height: 80px;
 
         &--img{
@@ -38,7 +38,7 @@ header{
         }
     }
 
-    &__menu {
+    &__menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -203,7 +203,7 @@ header{
         
     }
     
-    &__texto {
+    &__texto{
         font: {
             family: Oswald-Regular;
             size: 30px;
@@ -255,7 +255,14 @@ header{
         cursor: pointer;
 
         &:hover{
-            opacity: .8;
+            -webkit-mask-image: url(../recursos/nav_menu/lupa-producto.png);
+            mask-image: url(../recursos/nav_menu/lupa-producto.png);
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 70%;
+            -webkit-mask-size: 70%;
+            mask-position: 50% 50%;
+            -webkit-mask-position: 50% 50%;
         }
     
     }
@@ -270,7 +277,7 @@ header{
     }
 
     
-    &__boton--texto {
+    &__boton--texto{
         margin-bottom: 5px;
         color: var(--naranja-1);
         font: {
@@ -283,7 +290,7 @@ header{
 }
 
 .paginador{
-    margin: auto;
+    margin: 40px auto;
     width: 720px;
     display: flex;
     justify-content: space-between;
@@ -302,11 +309,81 @@ header{
 
     }
 
-    .pagina-1 {
-        border: 3px solid black;
+    .active{
+        border: 3px solid transparent;
         padding: 3px 15px;
-        border-radius: 50%;
-        background-color: #FF5C00;
+        border-radius: 7px;
+        background-color: var(--naranja-1);
         color: white;
     }
+}
+
+footer{
+    background-color: var(--negro-1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer{
+    width: 80%;
+    margin: 50px auto 30px auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        height: 80px;
+    }
+
+    &__container{
+        text-decoration: none;
+        color: white;
+        font: {
+            family: Oswald-Regular;
+            size: 20px;
+        };
+        letter-spacing: 2px;
+    }
+
+    
+    &__titulo{
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+
+    }
+
+    &__icono{
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    &__info{
+        margin-left: 10px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    &__rrss--icono{
+        margin: 10px;
+    }
+
+    &__creacion{
+        margin: 30px auto;
+        text-decoration: none;
+        color: white;
+        font: {
+            family: Oswald-Regular;
+            size: 25px;
+            weight: 200;
+        };
+    }
+
+    
 }
