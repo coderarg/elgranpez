@@ -281,3 +281,32 @@ header{
     }
 
 }
+
+.paginador{
+    margin: auto;
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__boton{
+        height: 40px;
+    }
+
+    &__paginas{
+        font: {
+            family: Oswald-Regular;
+            size: 20px;
+            weight: 800;
+        }
+
+    }
+
+    .pagina-1 {
+        border: 3px solid black;
+        padding: 3px 15px;
+        border-radius: 50%;
+        background-color: #FF5C00;
+        color: white;
+    }
+}

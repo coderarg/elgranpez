@@ -257,4 +257,27 @@ header {
   font-weight: 600;
 }
 
+.paginador {
+  margin: auto;
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paginador__boton {
+  height: 40px;
+}
+.paginador__paginas {
+  font-family: Oswald-Regular;
+  font-size: 20px;
+  font-weight: 800;
+}
+.paginador .pagina-1 {
+  border: 3px solid black;
+  padding: 3px 15px;
+  border-radius: 50%;
+  background-color: #FF5C00;
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
