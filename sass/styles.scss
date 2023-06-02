@@ -1,3 +1,7 @@
+/* ---------------------------------- 
+   genéricos para todas las páginas
+ ---------------------------------- */
+
 @use '_restartpage';
 @use '_gradients';
 
@@ -14,9 +18,9 @@
     --negro-1: #272727;
 }
 
+
 header{
     width: 100%;
-    max-width: 1440px;
     margin: auto;
     height: 250px;
     display: flex;
@@ -26,6 +30,7 @@ header{
 
 .header{
     width: 80%;
+    max-width: 1040px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +96,86 @@ header{
         }
     }
 }
+
+footer{
+    background-color: var(--negro-1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer{
+    width: 80%;
+    max-width: 1040px;
+    margin: 50px auto 30px auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        height: 80px;
+    }
+
+    &__container{
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    &__titulo{
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+
+        h4{
+            font: {
+                family: Oswald-Regular;
+                size: 30px;
+                weight: 300; 
+            };
+        }
+
+    }
+
+    &__icono{
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    &__info{
+        margin-left: 10px;
+        text-align: left;
+        
+        font: {
+            family: Oswald-Regular;
+            size: 20px;
+            weight: 100; 
+        };
+    }
+
+    &__rrss--icono{
+        margin: 10px;
+    }
+
+    &__creacion{
+        margin: 30px auto;
+        text-decoration: none;
+        color: white;
+        font: {
+            family: Oswald-Regular;
+            size: 25px;
+            weight: 200;
+        };
+    }
+    
+}
+
+/* --------------------------------- 
+                Inicio
+--------------------------------- */
 
 .filtrado{
     width: 90%;
@@ -200,8 +285,6 @@ header{
         padding: 0px 10px;
         border-left: 3px solid #0d6dcd;
         border-radius: 0px 10px 10px 0px;
-
-        
     }
     
     &__texto{
@@ -213,6 +296,39 @@ header{
         @include gradients.gradient-blue-light;
         text-align: center;
         letter-spacing: 2px;
+    }
+}
+
+.selectores {
+    width: 100%;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+
+    &__container {
+        width: 100%;
+        max-width: 400px;
+        min-height: 750px;
+        margin: 0px 80px;
+        border-radius: 20px;
+        background-color: #919191;
+        position: relative;
+        top: 5px;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    &__titulo {
+        font: {
+            family: Oswald-Regular;
+            size: 30px;
+            weight: 300;
+        }
     }
 }
 
@@ -320,72 +436,24 @@ header{
     }
 }
 
-footer{
-    background-color: var(--negro-1);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+.whatsapp-logo{
+    
+    max-width: 140px;
+    min-width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 250px;
+
+    img {
+        width: 100%;
+    }
 }
+/* --------------------------------- 
+        Preguntas Frecuentes
+--------------------------------- */
 
-.footer{
-    width: 80%;
-    margin: 50px auto 30px auto;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    &__logo{
-        height: 80px;
-    }
 
-    &__container{
-        text-decoration: none;
-        color: white;
-        font: {
-            family: Oswald-Regular;
-            size: 20px;
-        };
-        letter-spacing: 2px;
-    }
-
-    
-    &__titulo{
-        margin: 10px 0px;
-        display: flex;
-        align-items: center;
-        font-weight: 400;
-
-    }
-
-    &__icono{
-        height: 30px;
-        margin-right: 10px;
-    }
-    
-    &__info{
-        margin-left: 10px;
-        text-align: left;
-        font-size: 16px;
-        font-weight: 100;
-    }
-
-    &__rrss--icono{
-        margin: 10px;
-    }
-
-    &__creacion{
-        margin: 30px auto;
-        text-decoration: none;
-        color: white;
-        font: {
-            family: Oswald-Regular;
-            size: 25px;
-            weight: 200;
-        };
-    }
-
-    
-}
+/* --------------------------------- 
+               Contacto
+--------------------------------- */

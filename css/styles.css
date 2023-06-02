@@ -1,8 +1,12 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
+/* ---------------------------------- 
+   genéricos para todas las páginas
+ ---------------------------------- */
 @font-face {
   font-family: Oswald-Regular;
   src: url(../recursos/tipografia/static/Oswald-Regular.ttf);
@@ -16,7 +20,6 @@
 
 header {
   width: 100%;
-  max-width: 1440px;
   margin: auto;
   height: 250px;
   display: flex;
@@ -26,6 +29,7 @@ header {
 
 .header {
   width: 80%;
+  max-width: 1040px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,6 +92,67 @@ header {
   }
 }
 
+footer {
+  background-color: var(--negro-1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.footer {
+  width: 80%;
+  max-width: 1040px;
+  margin: 50px auto 30px auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  height: 80px;
+}
+.footer__container {
+  text-decoration: none;
+  color: white;
+}
+.footer__titulo {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+.footer__titulo h4 {
+  font-family: Oswald-Regular;
+  font-size: 30px;
+  font-weight: 300;
+}
+.footer__icono {
+  height: 30px;
+  margin-right: 10px;
+}
+.footer__info {
+  margin-left: 10px;
+  text-align: left;
+  font-family: Oswald-Regular;
+  font-size: 20px;
+  font-weight: 100;
+}
+.footer__rrss--icono {
+  margin: 10px;
+}
+.footer__creacion {
+  margin: 30px auto;
+  text-decoration: none;
+  color: white;
+  font-family: Oswald-Regular;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/* --------------------------------- 
+                Inicio
+--------------------------------- */
 .filtrado {
   width: 90%;
   max-width: 1240px;
@@ -202,6 +267,33 @@ header {
   letter-spacing: 2px;
 }
 
+.selectores {
+  width: 100%;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 20;
+  overflow: hidden;
+}
+.selectores__container {
+  width: 100%;
+  max-width: 400px;
+  min-height: 750px;
+  margin: 0px 80px;
+  border-radius: 20px;
+  background-color: #919191;
+  position: relative;
+  top: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.selectores__titulo {
+  font-family: Oswald-Regular;
+  font-size: 30px;
+  font-weight: 300;
+}
+
 .productos__contenedor {
   width: 90%;
   max-width: 1240px;
@@ -288,59 +380,22 @@ header {
   color: white;
 }
 
-footer {
-  background-color: var(--negro-1);
+.whatsapp-logo {
+  max-width: 140px;
+  min-width: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 250px;
+}
+.whatsapp-logo img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
 }
 
-.footer {
-  width: 80%;
-  margin: 50px auto 30px auto;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__logo {
-  height: 80px;
-}
-.footer__container {
-  text-decoration: none;
-  color: white;
-  font-family: Oswald-Regular;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.footer__titulo {
-  margin: 10px 0px;
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-}
-.footer__icono {
-  height: 30px;
-  margin-right: 10px;
-}
-.footer__info {
-  margin-left: 10px;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 100;
-}
-.footer__rrss--icono {
-  margin: 10px;
-}
-.footer__creacion {
-  margin: 30px auto;
-  text-decoration: none;
-  color: white;
-  font-family: Oswald-Regular;
-  font-size: 25px;
-  font-weight: 200;
-}
+/* --------------------------------- 
+        Preguntas Frecuentes
+--------------------------------- */
+/* --------------------------------- 
+               Contacto
+--------------------------------- */
 
 /*# sourceMappingURL=styles.css.map */
