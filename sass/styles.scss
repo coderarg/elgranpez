@@ -299,14 +299,14 @@ footer{
     }
 }
 
-.selectores {
+.selectores{
     width: 100%;
     margin-top: 5px;
     position: absolute;
     z-index: 20;
     overflow: hidden;
 
-    &__container {
+    &__container{
         width: 100%;
         max-width: 400px;
         min-height: 750px;
@@ -323,12 +323,17 @@ footer{
 
     }
 
-    &__titulo {
+    &__titulo{
+        margin: 20px auto;
         font: {
             family: Oswald-Regular;
-            size: 30px;
+            size: 35px;
             weight: 300;
         }
+    }
+
+    &__categorias{
+        width: 70%;
     }
 }
 
