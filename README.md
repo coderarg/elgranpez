@@ -8,6 +8,6 @@ La necesidad del cliente es mostrar los productos que venden pero sin generar co
 El objectivo de visitar el sitio web es generar un contacto entre este distribuidor y clientes que compren en cantidad y/o revender productos de buena calidad a buen precio.
 Esto se logra eliiminando una la "página de inicio" mostrando directamente los productos al ingresar y a través de los llamados a la acción en las diferentes secciones y páginas.
 
-##Tecnologías
+## Tecnologías
 El proyectgo es desarrollado con HTML - SCSS y JavaScript.
 
