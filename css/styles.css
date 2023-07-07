@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -523,6 +523,34 @@ footer {
 /* --------------------------------- 
         Preguntas Frecuentes
 --------------------------------- */
+main {
+  min-height: 65vh;
+}
+
+.pf {
+  width: 100%;
+}
+.pf__contenedor {
+  width: 80%;
+  margin: 30px auto;
+}
+.pf__titulo {
+  margin-bottom: 3px;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+.pf__descripcion {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.pf__descripcion a {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: var(--naranja-1);
+}
+
 /* --------------------------------- 
                Contacto
 --------------------------------- */

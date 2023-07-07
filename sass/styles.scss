@@ -604,6 +604,36 @@ footer{
         Preguntas Frecuentes
 --------------------------------- */
 
+main {
+    min-height: 65vh;
+}
+.pf {
+    width: 100%;
+    
+    &__contenedor {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    &__titulo {
+        margin-bottom: 3px;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    &__descripcion {
+        font-size: 20px;
+        letter-spacing: 1px;
+
+        & a {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-decoration: none;
+            color: var(--naranja-1);
+        }
+    }
+}
 
 
 /* --------------------------------- 
