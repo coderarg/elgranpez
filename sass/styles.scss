@@ -639,3 +639,62 @@ main {
 /* --------------------------------- 
                Contacto
 --------------------------------- */
+
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__contenedor {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__texto {
+        font-size: 18px;
+    }
+
+    &__imagen {
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__fieldset {
+        width: 70%;
+        margin: 7px auto;
+        border: none;
+    }
+
+    &__label {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        width: 100%;
+        display: block;
+    }
+
+    &__textarea {
+        width: 100%;
+        display: block;
+    }
+
+    &__submit {
+        width: 70%;
+        display: block;
+    }
+}

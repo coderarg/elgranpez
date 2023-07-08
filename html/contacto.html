@@ -38,14 +38,39 @@
 
     <main>
         <section class="contacto">
-            <div class="contacto__izq">
-                <p>Deje su consulta y lo estaremos contactando a la brevedad</p>
-                <img src="" alt="">
-                <p>Tenga en cuenta que nuestro horario de atención es de Lunes a Viernes de 9 a 18hs. </p>
+            <div class="contacto__contenedor">
+                <p class="contacto__texto">Deje su consulta y lo estaremos contactando a la brevedad</p>
+                <img class="contacto__imagen" src="../recursos/nav_menu/signo-preguntas-color.png" alt="">
+                <p class="contacto__texto">Tenga en cuenta que nuestro horario de atención es de Lunes a Viernes de 9 a 18hs. </p>
             </div>
-            <div class="contacto__der">
-                <form action="">
-
+            <div class="contacto__contenedor">
+                <form action="" class="contacto__form">
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Nombre Completo</label>
+                        <input class="contacto__input" id="nombre__completo" type="text" required>
+                    </fieldset>
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Correo Electrónico</label>
+                        <input class="contacto__input" id="" type="email" required>
+                    </fieldset>
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Celular</label>
+                        <input class="contacto__input" id="" type="text">
+                    </fieldset>
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Provincia</label>
+                        <input class="contacto__input" id="" type="text">
+                    </fieldset>
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Producto</label>
+                        <input class="contacto__input" id="" type="text">
+                    </fieldset>
+                    <fieldset class="contacto__fieldset">
+                        <label class="contacto__label" for="">Mensaje</label>
+                        <textarea class="contacto__textarea" name="" id="" cols="30" rows="5">
+                        </textarea>
+                    </fieldset>
+                    <input class="contacto__submit" type="submit">
                 </form>
             </div>
         </section>

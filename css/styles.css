@@ -554,5 +554,54 @@ main {
 /* --------------------------------- 
                Contacto
 --------------------------------- */
+.contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__contenedor {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__texto {
+  font-size: 18px;
+}
+.contacto__imagen {
+  width: 40%;
+  margin: 20px auto;
+}
+.contacto__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__fieldset {
+  width: 70%;
+  margin: 7px auto;
+  border: none;
+}
+.contacto__label {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+.contacto__input {
+  width: 100%;
+  display: block;
+}
+.contacto__textarea {
+  width: 100%;
+  display: block;
+}
+.contacto__submit {
+  width: 70%;
+  display: block;
+}
 
 /*# sourceMappingURL=styles.css.map */
