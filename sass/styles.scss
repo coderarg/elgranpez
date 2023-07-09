@@ -645,6 +645,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5%;
+    margin: 40px 0px ;
 
     &__contenedor {
         width: 30%;
@@ -655,12 +657,12 @@ main {
     }
 
     &__texto {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     &__imagen {
         width: 40%;
-        margin: 20px auto;
+        margin: 40px 0px;
     }
 
     &__form {
@@ -672,29 +674,46 @@ main {
     }
 
     &__fieldset {
-        width: 70%;
-        margin: 7px auto;
+        width: 100%;
         border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
     }
 
     &__label {
-        width: 100%;
-        display: block;
-        margin-bottom: 5px;
+        width: 80%;
     }
 
-    &__input {
-        width: 100%;
-        display: block;
+    &__gradient{
+        width: 80%;;
+        border-radius: 10px;
+        padding: 1.5px 1.5px;
+        background: linear-gradient(122deg, #4EA6FF 20%, #00478F 110%);
+        margin: 5px auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    &__textarea {
+    &__input, &__textarea, &__submit  {
         width: 100%;
-        display: block;
+        height: 100%;
+        border-radius: 9px;
+        border: none;
+        padding: 6px 12px;
+        background-color: #F1F1F1;
     }
 
     &__submit {
-        width: 70%;
-        display: block;
+        color: var(--naranja-1);
+        letter-spacing: 3px;
+        font-size: 20px;
+        background-color: white;
     }
+
 }
+
