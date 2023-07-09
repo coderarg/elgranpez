@@ -2,6 +2,7 @@
   "name": "elgranpez",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch sass:css"
@@ -14,6 +15,5 @@
   },
   "description": "",
   "devDependencies": {
-    "jsdoc": "^4.0.2"
   }
 }
