@@ -4,6 +4,8 @@
 
 @use '_restartpage';
 @use '_gradients';
+@use '_mediaqueries';
+
 
 @font-face {
     font-family: Oswald-Regular;
@@ -36,6 +38,10 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 50px auto 30px auto;
+
+    &__filtros {
+        display: none;
+    }
 
     &__logo{
         height: 80px;
@@ -90,9 +96,6 @@ header{
         text-align: center;
         @include gradients.gradient-blue-light;
 
-        @media screen and (max-width:1400px) {
-            font-size: 35px;
-        }
     }
 }
 
@@ -168,6 +171,73 @@ footer{
         };
     }
     
+}
+
+
+
+/* --------------------------------- 
+            ToggleMenu
+--------------------------------- */
+
+.togglemenu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__header{
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        height: 80px;
+    }
+
+    &__hamburguesa, &__cerrar{
+        height: 30px;
+    }
+
+    &__menu{
+        width: 90%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    flex-direction: column;
+    }
+
+    &__items {
+        text-decoration: none;
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        @include gradients.gradient-blue-light;
+
+        &:hover{
+            -webkit-text-fill-color: #2391ff;
+            transition: 1s;
+        }
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
 }
 
 /* --------------------------------- 
@@ -737,3 +807,34 @@ main {
     }
 }
 
+@media screen and (max-width: 1240px) {
+
+    /* --------------------------------- 
+    --------------------------------- */
+
+    .header {
+        justify-content: space-between;
+
+        &__filtros{
+            display: block;
+        }
+
+        &__menu{
+            display: none;
+        }
+    }
+
+    /* --------------------------------- 
+                    Inicio
+    --------------------------------- */
+
+    .filtrado{
+        display: none;
+    }
+
+
+
+    .paginador {
+        width: 90%;
+    }
+}

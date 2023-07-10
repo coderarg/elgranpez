@@ -44,6 +44,9 @@ header {
   align-items: center;
   margin: 50px auto 30px auto;
 }
+.header__filtros {
+  display: none;
+}
 .header__logo {
   height: 80px;
 }
@@ -92,11 +95,6 @@ header {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
-@media screen and (max-width: 1400px) {
-  .header__titulo {
-    font-size: 35px;
-  }
 }
 
 footer {
@@ -153,6 +151,63 @@ footer {
   color: white;
   font-size: 25px;
   font-weight: 200;
+}
+
+/* --------------------------------- 
+            ToggleMenu
+--------------------------------- */
+.togglemenu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.togglemenu__header {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.togglemenu__logo {
+  height: 80px;
+}
+.togglemenu__hamburguesa, .togglemenu__cerrar {
+  height: 30px;
+}
+.togglemenu__menu {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.togglemenu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.togglemenu__items {
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(50deg, #4EA6FF 15%, #00478F 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.togglemenu__items:hover {
+  -webkit-text-fill-color: #2391ff;
+  transition: 1s;
+}
+.togglemenu__icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* --------------------------------- 
@@ -640,6 +695,29 @@ main {
   letter-spacing: 3px;
   font-size: 20px;
   background-color: white;
+}
+
+@media screen and (max-width: 1240px) {
+  /* --------------------------------- 
+  --------------------------------- */
+  .header {
+    justify-content: space-between;
+  }
+  .header__filtros {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
+  /* --------------------------------- 
+                  Inicio
+  --------------------------------- */
+  .filtrado {
+    display: none;
+  }
+  .paginador {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
