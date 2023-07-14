@@ -1,18 +1,47 @@
+const filtrosBTN = document.querySelector('#filtrosBTN')
+const filtros = document.querySelector('#filtros');
+const categorias = document.querySelectorAll('.selectores__cat');
+const togglemenuFiltros = document.querySelector('#togglemenu--filtros');
+const headerFiltros = document.querySelector('#header--botonFiltros');
+let filtrosOpen = false;
 
-//DOM
-const botonMenu = document.querySelector('#botonMenu');
-const toggleMenu = document.querySelector('#toggle-menu');
-const cerrarMenu = document.querySelector('#cerrarMenu');
-
-
-botonMenu.addEventListener('click', (e) => {
+filtrosBTN.addEventListener('click', (e) => {
     e.preventDefault();
-    toggleMenu.style.left = '0vw';
+    if(filtrosOpen) {
+        filtros.style.top = '-1000px';
+        filtrosOpen = false;
+    }else{
+        filtros.style.top = '4px';
+        filtrosOpen = true;
+    };
 });
 
-cerrarMenu.addEventListener('click', (e) => {
+headerFiltros.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(filtrosOpen) {
+        filtros.style.top = '-1000px';
+        filtrosOpen = false;
+    }else{
+        filtros.style.top = '4px';
+        filtrosOpen = true;
+    };
+});
+
+togglemenuFiltros.addEventListener('click', (e) => {
     e.preventDefault();
     toggleMenu.style.left = '100vw';
+    if(filtrosOpen) {
+        filtros.style.top = '-1000px';
+        filtrosOpen = false;
+    }else{
+        filtros.style.top = '4px';
+        filtrosOpen = true;
+    };
+
 });
 
-
+categorias.forEach((cat) => {
+    cat.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+});
