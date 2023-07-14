@@ -12,7 +12,7 @@
 <body>
     <header>
         <section class="header">
-            <div class="header__filtros">
+            <div id="header--botonFiltros" class="header__filtros">
                 <img class="header__filtros--img" src="./recursos/nav_menu/filtros-logo.png" alt="">
             </div>
 
@@ -34,13 +34,39 @@
                     </a>
                 </div>
             </div>
-            <div class="header__botonmenu">
-                <img src="./recursos/nav_menu/nav__menu.png" alt="">
-
+            <div id="botonMenu" class="header__botonmenu">
+                <img src="./recursos/nav_menu/nav__menu.png" alt="botón menu">
             </div>
         </section>
         <h1 class="header__titulo">VENTA MAYORISTA DE PRODUCTOS IMPORTADOS</h1>
     </header>
+
+    <div id="toggle-menu" class="togglemenu">
+        <div class="togglemenu__header">
+            <div id="togglemenu--filtros" class="togglemenu__botones">
+                <img class="togglemenu__hamburguesa" src="./recursos/nav_menu/nav__menu.png" alt="">
+            </div>
+            <img class="togglemenu__logo" src="./recursos/egp-logo/el-gran-pez_isologo - Copy.png" alt="">
+            <div id="cerrarMenu" class="togglemenu__botones">
+                <img class="togglemenu__cerrar" src="./recursos/nav_menu/close_menu.png" alt="cerrar menu">
+            </div>
+        </div>
+        <div class="togglemenu__menu">
+            <div class="togglemenu__nav">
+                <a class="togglemenu__items">Inicio</a>
+                <a class="togglemenu__items" href="./html/contacto.html">Contacto</a>
+                <a class="togglemenu__items" href="./html/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </div>
+            <div class="togglemenu__icons">
+                <a href="https://www.instagram.com/" class="togglemenu__icons--links">
+                    <img src="./recursos/nav_menu/instagram-logo.png" alt="logo instagram"
+                        class="togglemenu__icons--img"></a>
+                <a href="https://www.facebook.com/" class="togglemenu__icons--links">
+                    <img src="./recursos/nav_menu/facebook-logo.png" alt="logo facebook" class="togglemenu__icons--img">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="filtrado">
