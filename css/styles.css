@@ -844,7 +844,8 @@ footer {
     font-size: 20px;
   }
   .whatsapp-logo {
-    bottom: 200px;
+    bottom: 100px;
+    right: 20px;
   }
   .footer {
     display: grid;
@@ -868,11 +869,6 @@ footer {
   }
   .container3 {
     grid-area: container3;
-  }
-}
-@media screen and (max-width: 375px) {
-  .whatsapp-logo {
-    bottom: 250px;
   }
 }
 
