@@ -17,6 +17,10 @@
     --negro-1: #272727;
 }
 
+main{
+    margin-top: 100px;
+}
+
 header{
     width: 100%;
     height: 150px;
@@ -40,6 +44,10 @@ header{
 
     &__filtros {
         display: none;
+
+        &--img{
+            width: 100%;
+        }
     }
 
     &__logo{
@@ -98,6 +106,9 @@ header{
 
     &__botonmenu{
         display: none;
+        &--img{
+            width: 100%;
+        }
     }
 }
 
@@ -135,14 +146,14 @@ footer{
         margin: 10px 0px;
         display: flex;
         align-items: center;
+    }
 
-        h4{
-            font: {
-                family: Oswald-Regular;
-                size: 30px;
-                weight: 300; 
-            };
-        }
+    &__descripcion{
+        font: {
+            family: Oswald-Regular;
+            size: 30px;
+            weight: 300; 
+        };
     }
 
     &__icono{
@@ -568,7 +579,7 @@ footer{
 .whatsapp-logo{
     width: 12%;
     max-width: 140px;
-    min-width: 50px;
+    min-width: 70px;
     position: fixed;
     right: 50px;
     bottom: 200px;
@@ -817,11 +828,16 @@ footer{
     }
 }
 
+
+/* ------------------------------- 
+            Media Queries
+------------------------------ */
+
 @media screen and (max-width: 1240px) {
     /* --------------------------------- 
     --------------------------------- */
     header {
-        height: 140px;
+        height: auto;
         margin-top: 0px;
     }
     .header {
@@ -832,20 +848,21 @@ footer{
         box-sizing: border-box;
         justify-content: space-between;
 
-        &__filtros{
+        &__logo{
+            height: 70px;
+        }
+
+        &__filtros, &__botonmenu{
             display: block;
+            width: 30px;
             
             &--img {
-                width: 30px;
+                width: 100%;
             }
         }
 
         &__menu{
             display: none;
-        }
-
-        &__botonmenu{
-            display: block;
         }
 
         &__titulo {
@@ -863,4 +880,145 @@ footer{
     .paginador {
         width: 90%;
     }
+}
+
+@media screen and (max-width: 769px) {
+    header {
+        height: auto;
+    }
+    .header{
+        height: auto;
+
+        &__botonmenu, &__filtros{
+            width: 4%;
+            min-width: 20px;
+        }
+        &__titulo {
+            font-size: 2rem;
+        }
+    }
+        .producto{
+        width: 150px;
+        height: auto;
+
+        &__titulo {
+            font-size: 12px;
+        }
+        &__boton--texto{
+            font-size: 24px;
+        }
+    }
+
+    .whatsapp-logo{
+        bottom: 220px;
+    }
+
+    .footer{
+        margin: 15px auto;
+    
+        &__logo{
+            height: 50px;
+        }    
+        
+        &__descripcion{
+            font-size: 20px;
+        }
+    
+        &__icono{
+            height: 20px;
+        }
+        
+        &__info{
+            font-size: 12px;
+        }
+    
+        &__rrss--icono{
+            width: 30px;
+        }
+    
+        &__creacion{
+            font-size: 16px;
+            margin: 15px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    main{
+        margin-top: 100px;
+    }
+
+    header {
+        height: auto;
+    }
+    .header{
+        &__titulo {
+        font-size: 1.5rem;
+        }
+
+        &__logo {
+            height: 50px;
+        }
+    }
+
+    .productos__contenedor{
+        margin-top: 20px;
+        justify-content: center;
+        gap: 40px;
+    }
+    .producto{
+        width: 100px;
+        height: auto;
+
+        &__titulo {
+            font-size: 8px;
+        }
+        &__boton--texto{
+            font-size: 20px;
+        }
+    }
+
+    .whatsapp-logo{
+        bottom: 200px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "logo rrss"
+        "container1 container1" 
+        "container2 container2"
+        "container3 container3";
+        justify-items: center;
+        align-items: center;
+    
+        &__logo {
+            grid-area: logo;
+        }
+
+        &__rrss {
+            grid-area: rrss;
+        }
+    }
+    .container1 {
+        grid-area: container1;
+    }
+    .container2 {
+        grid-area: container2;
+    }
+    .container3 {
+        grid-area: container3;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .whatsapp-logo{
+        bottom: 250px;
+    }
+
 }
