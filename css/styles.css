@@ -770,7 +770,7 @@ footer {
     width: 90%;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 820px) {
   header {
     height: auto;
   }
