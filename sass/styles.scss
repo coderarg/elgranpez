@@ -449,11 +449,14 @@ footer{
     }
 
     &__botones{
+        width: 90%;
+        display: flex; 
+        justify-content: space-between;
 
         //No puedo aplicar border gradient por lo que uso un div con background gradient
         &--container{
-            display: inline-block;
-            margin: 15px auto;
+            display: block;
+            margin: 15px 0px;
             background: linear-gradient(122deg, #4EA6FF 20%, #00478F 110%);
             border-radius: 12px;
         }
@@ -959,6 +962,15 @@ footer{
 
         &__logo {
             height: 50px;
+        }
+    }
+
+    .selectores__botones{
+        flex-direction: column;
+        align-items: center;
+
+        &--container {
+            margin: 0px 0px 15px 0px;
         }
     }
 

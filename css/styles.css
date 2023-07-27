@@ -409,9 +409,14 @@ footer {
   font-weight: 400;
   color: #272727;
 }
+.selectores__botones {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
 .selectores__botones--container {
-  display: inline-block;
-  margin: 15px auto;
+  display: block;
+  margin: 15px 0px;
   background: linear-gradient(122deg, #4EA6FF 20%, #00478F 110%);
   border-radius: 12px;
 }
@@ -827,6 +832,13 @@ footer {
   }
   .header__logo {
     height: 50px;
+  }
+  .selectores__botones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .selectores__botones--container {
+    margin: 0px 0px 15px 0px;
   }
   .productos__contenedor {
     margin-top: 20px;
