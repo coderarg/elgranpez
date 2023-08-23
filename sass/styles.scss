@@ -18,7 +18,7 @@
 }
 
 main{
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 header{
@@ -209,8 +209,9 @@ footer{
 
     &__header{
         width: 80%;
+        height: 100px;
         max-width: 1040px;
-        margin: 50px auto 30px auto;
+        margin: 10px auto 30px auto;
         
         display: flex;
         align-items: center;
@@ -222,7 +223,11 @@ footer{
     }
 
     &__hamburguesa, &__cerrar{
-        width: 30px;
+      width: 30px;
+      
+      &--img {
+          width: 100%;
+      }
     }
 
     &__menu{
@@ -244,7 +249,7 @@ footer{
     &__items {
         text-decoration: none;
         font-size: 30px;
-        margin-bottom: 10px;
+        margin: 30px;
         @include gradients.gradient-blue-light;
 
         &:hover{
@@ -839,6 +844,9 @@ footer{
 @media screen and (max-width: 1240px) {
     /* --------------------------------- 
     --------------------------------- */
+    main {
+      margin-top: 100px;
+    }
     header {
         height: auto;
         margin-top: 0px;
@@ -857,7 +865,8 @@ footer{
 
         &__filtros, &__botonmenu{
             display: block;
-            width: 30px;
+            width: 4%;
+            min-width: 20px;
             
             &--img {
                 width: 100%;
@@ -870,6 +879,15 @@ footer{
 
         &__titulo {
             font-size: 2.5rem;
+        }
+    }
+
+    .togglemenu__botones {
+        width: 4%;
+        min-width: 20px;
+
+        img {
+          width: 100%;
         }
     }
 
