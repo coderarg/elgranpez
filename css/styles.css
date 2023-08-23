@@ -771,6 +771,12 @@ footer {
   .header__titulo {
     font-size: 2.5rem;
   }
+  .togglemenu__header {
+    height: 80px;
+  }
+  .togglemenu__logo {
+    height: 70px;
+  }
   .togglemenu__botones {
     width: 4%;
     min-width: 20px;
@@ -908,6 +914,9 @@ footer {
   }
   .container3 {
     grid-area: container3;
+  }
+  .togglemenu__items {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 375px) {
