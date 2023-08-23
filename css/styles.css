@@ -625,9 +625,11 @@ footer {
 --------------------------------- */
 .pf {
   width: 100%;
+  margin: 80px auto;
 }
 .pf__contenedor {
   width: 80%;
+  max-width: 1040px;
   margin: 30px auto;
 }
 .pf__titulo {
@@ -772,7 +774,7 @@ footer {
     font-size: 2.5rem;
   }
   .togglemenu__header {
-    height: 80px;
+    height: 70px;
   }
   .togglemenu__logo {
     height: 70px;
@@ -914,6 +916,9 @@ footer {
   }
   .container3 {
     grid-area: container3;
+  }
+  .togglemenu__logo {
+    height: 50px;
   }
   .togglemenu__items {
     font-size: 24px;

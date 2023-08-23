@@ -748,9 +748,11 @@ footer {
 
 .pf {
   width: 100%;
+  margin: 80px auto;
 
   &__contenedor {
     width: 80%;
+    max-width: 1040px;
     margin: 30px auto;
   }
 
@@ -933,7 +935,7 @@ footer {
   .togglemenu {
 
     &__header {
-      height: 80px;
+      height: 70px;
     }
 
     &__logo {
@@ -1127,10 +1129,17 @@ footer {
     grid-area: container3;
   }
 
-  .togglemenu__items {
-    font-size: 24px;
-  }
+  .togglemenu {
 
+    &__logo {
+      height: 50px;
+    }
+
+    &__items {
+      font-size: 24px;
+    }
+  }
+    
 }
 
 @media screen and (max-width: 375px) {
