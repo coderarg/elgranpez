@@ -218,13 +218,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  flex-grow: 0.75;
 }
 .togglemenu__items {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  margin: auto;
+  margin: 40px auto;
   background: linear-gradient(50deg, #4EA6FF 15%, #00478F 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -240,6 +239,9 @@ footer {
   justify-content: center;
   gap: 40px;
   margin: 10px auto;
+}
+.togglemenu__icons--img {
+  height: 50px;
 }
 
 /* --------------------------------- 
@@ -904,9 +906,6 @@ footer {
   }
   .container3 {
     grid-area: container3;
-  }
-  .togglemenu__items {
-    font-size: 24px;
   }
   /*************Inicio*************/
   .selectores__botones {

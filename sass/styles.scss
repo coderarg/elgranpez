@@ -247,14 +247,13 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    flex-grow: 0.75;
   }
 
   &__items {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    margin: auto;
+    margin: 40px auto;
     @include gradients.gradient-blue-light;
 
     &:hover {
@@ -268,6 +267,9 @@ footer {
     justify-content: center;
     gap: 40px;
     margin: 10px auto;
+    &--img {
+      height: 50px;
+    }
   }
 }
 
@@ -1095,13 +1097,6 @@ footer {
 
   .container3 {
     grid-area: container3;
-  }
-
-  .togglemenu {
-
-    &__items {
-      font-size: 24px;
-    }
   }
 
   /*************Inicio*************/
