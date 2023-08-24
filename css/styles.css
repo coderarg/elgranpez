@@ -756,12 +756,12 @@ footer {
     justify-content: space-between;
   }
   .header__logo {
-    height: 70px;
+    height: 80px;
   }
   .header__filtros, .header__botonmenu {
     display: block;
     width: 4%;
-    min-width: 20px;
+    min-width: 35px;
   }
   .header__filtros--img, .header__botonmenu--img {
     width: 100%;
@@ -773,14 +773,14 @@ footer {
     font-size: 2.5rem;
   }
   .togglemenu__header {
-    height: 70px;
+    height: 80px;
   }
   .togglemenu__logo {
-    height: 70px;
+    height: 80px;
   }
   .togglemenu__botones {
     width: 4%;
-    min-width: 20px;
+    min-width: 35px;
   }
   .togglemenu__botones img {
     width: 100%;
@@ -799,10 +799,6 @@ footer {
   }
   .header {
     height: auto;
-  }
-  .header__botonmenu, .header__filtros {
-    width: 4%;
-    min-width: 20px;
   }
   .header__titulo {
     font-size: 2rem;
@@ -835,7 +831,7 @@ footer {
     height: auto;
   }
   .producto__titulo {
-    font-size: 12px;
+    font-size: 16px;
   }
   .producto__boton--texto {
     font-size: 24px;
@@ -875,7 +871,7 @@ footer {
 }
 @media screen and (max-width: 650px) {
   main {
-    margin-top: 80px;
+    margin-top: 100px;
   }
   header {
     height: auto;
@@ -887,7 +883,7 @@ footer {
     margin: auto;
   }
   .header__logo {
-    height: 50px;
+    height: 70px;
   }
   .footer {
     display: grid;
@@ -935,7 +931,7 @@ footer {
     height: auto;
   }
   .producto__titulo {
-    font-size: 8px;
+    font-size: 16px;
   }
   .producto__boton--texto {
     font-size: 20px;

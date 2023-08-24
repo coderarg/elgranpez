@@ -895,14 +895,14 @@ footer {
     justify-content: space-between;
 
     &__logo {
-      height: 70px;
+      height: 80px;
     }
 
     &__filtros,
     &__botonmenu {
       display: block;
       width: 4%;
-      min-width: 20px;
+      min-width: 35px;
 
       &--img {
         width: 100%;
@@ -921,16 +921,16 @@ footer {
   .togglemenu {
 
     &__header {
-      height: 70px;
+      height: 80px;
     }
 
     &__logo {
-      height: 70px;
+      height: 80px;
     }
 
     &__botones {
       width: 4%;
-      min-width: 20px;
+      min-width: 35px;
       
       img {
         width: 100%;
@@ -955,12 +955,6 @@ footer {
 
   .header {
     height: auto;
-
-    &__botonmenu,
-    &__filtros {
-      width: 4%;
-      min-width: 20px;
-    }
 
     &__titulo {
       font-size: 2rem;
@@ -1002,7 +996,7 @@ footer {
     height: auto;
 
     &__titulo {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     &__boton--texto {
@@ -1055,7 +1049,7 @@ footer {
 @media screen and (max-width: 650px) {
 
   main {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   header {
@@ -1071,7 +1065,7 @@ footer {
     }
 
     &__logo {
-      height: 50px;
+      height: 70px;
     }
   }
 
@@ -1138,7 +1132,7 @@ footer {
     height: auto;
 
     &__titulo {
-      font-size: 8px;
+      font-size: 16px;
     }
 
     &__boton--texto {
