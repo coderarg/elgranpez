@@ -151,7 +151,7 @@ footer {
   font-weight: 300;
 }
 .footer__icono {
-  height: 30px;
+  height: 40px;
   margin-right: 10px;
 }
 .footer__info {
@@ -162,6 +162,7 @@ footer {
 }
 .footer__rrss--icono {
   margin: 10px;
+  height: 45px;
 }
 .footer__creacion {
   margin: 30px auto;
@@ -816,9 +817,6 @@ footer {
   }
   .footer__info {
     font-size: 12px;
-  }
-  .footer__rrss--icono {
-    width: 30px;
   }
   .footer__creacion {
     font-size: 16px;
