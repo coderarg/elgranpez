@@ -526,7 +526,7 @@ footer {
 .whatsapp-logo {
   width: 12%;
   max-width: 140px;
-  min-width: 70px;
+  min-width: 100px;
   position: fixed;
   right: 50px;
   bottom: 200px;
@@ -806,9 +806,6 @@ footer {
   .footer {
     margin: 15px auto;
   }
-  .footer__logo {
-    height: 50px;
-  }
   .footer__descripcion {
     font-size: 20px;
   }
@@ -908,9 +905,6 @@ footer {
   }
   .container3 {
     grid-area: container3;
-  }
-  .togglemenu__logo {
-    height: 50px;
   }
   .togglemenu__items {
     font-size: 24px;
