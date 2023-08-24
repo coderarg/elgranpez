@@ -831,6 +831,7 @@ footer {
     height: auto;
   }
   .producto__titulo {
+    margin: 5px auto;
     font-size: 16px;
   }
   .producto__boton--texto {
