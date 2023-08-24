@@ -1130,6 +1130,8 @@ footer {
   }
 
   .producto {
+    width: 40%;
+    min-width: 150px;
     height: auto;
 
     &__titulo {
@@ -1167,4 +1169,19 @@ footer {
   .header__titulo {
     margin: auto 20px;
   }
+
+  .producto {
+    width: 70%;
+    min-width: 150px;
+    height: auto;
+
+    &__titulo {
+      font-size: 16px;
+    }
+
+    &__boton--texto {
+      font-size: 20px;
+    }
+  }
+
 }

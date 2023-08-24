@@ -929,6 +929,8 @@ footer {
     gap: 40px;
   }
   .producto {
+    width: 40%;
+    min-width: 150px;
     height: auto;
   }
   .producto__titulo {
@@ -957,6 +959,17 @@ footer {
 @media screen and (max-width: 375px) {
   .header__titulo {
     margin: auto 20px;
+  }
+  .producto {
+    width: 70%;
+    min-width: 150px;
+    height: auto;
+  }
+  .producto__titulo {
+    font-size: 16px;
+  }
+  .producto__boton--texto {
+    font-size: 20px;
   }
 }
 
