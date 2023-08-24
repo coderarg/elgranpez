@@ -1,9 +1,10 @@
 {
   "name": "elgranpez",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "/scripts/index.js",
   "type": "module",
   "scripts": {
+    "start": "node /scripts/index.js",
     "sass": "sass --watch sass:css"
   },
   "keywords": [],
@@ -14,5 +15,6 @@
   },
   "description": "",
   "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

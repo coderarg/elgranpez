@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="../recursos/egp-logo/el-gran-pez_isologo.png">
   <link rel="stylesheet" href="../css/styles.css">
   <title>El Gran Pez | Contacto</title>
 </head>
@@ -77,42 +79,42 @@
         </p>
       </div>
       <div class="contacto__contenedor">
-        <form action="" class="contacto__form">
+        <form class="contacto__form" id="contacto-form">
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Nombre Completo</label>
+            <label class="contacto__label" for="form__nombre">Nombre Completo</label>
             <div class="contacto__gradient">
-              <input class="contacto__input" id="nombre__completo" type="text" required>
+              <input class="contacto__input" name="form__nombre" id="form__nombre" type="text" required>
             </div>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Correo Electrónico</label>
+            <label class="contacto__label" for="form__email">Correo Electrónico</label>
             <div class="contacto__gradient">
-              <input class="contacto__input" id="" type="email" required>
+              <input class="contacto__input" name="form__email" id="form__email" type="email" required>
             </div>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Celular</label>
+            <label class="contacto__label" for="form__telefono">Celular</label>
             <div class="contacto__gradient">
-              <input class="contacto__input" id="" type="text">
+              <input class="contacto__input" name="form__telefono" id="form__telefono" type="text">
             </div>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Provincia</label>
+            <label class="contacto__label" for="form__provincia">Provincia</label>
             <div class="contacto__gradient">
-              <input class="contacto__input" id="" type="text">
+              <input class="contacto__input" name="form__provincia" id="form__provincia" type="text">
             </div>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Producto</label>
+            <label class="contacto__label" for="form__producto">Producto</label>
             <div class="contacto__gradient">
-              <input class="contacto__input" id="" type="text">
+              <input class="contacto__input" name="form__producto" id="form__producto" type="text">
             </div>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <label class="contacto__label" for="">Mensaje</label>
+            <label class="contacto__label" for="form__mensaje">Mensaje</label>
             <div class="contacto__gradient">
-              <textarea class="contacto__textarea" name="" id="" cols="30" rows="5">
-                            </textarea>
+              <textarea class="contacto__textarea" name="form__mensaje" id="form__mensaje" cols="30" rows="5">
+              </textarea>
             </div>
           </fieldset>
           <div class="contacto__gradient">
@@ -159,7 +161,9 @@
     </section>
     <a href="https://github.com/coderarg" class="footer__creacion">Sitio web creado por Lucas García</a>
   </footer>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../scripts/toggleMenu.js"></script>
+  <script src="../scripts/contacto.js"></script>
 </body>
 
 </html>
