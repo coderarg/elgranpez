@@ -101,7 +101,6 @@ header {
       size: 50px;
       weight: 400;
     }
-
     text-align: center;
     @include gradients.gradient-blue-light;
   }
@@ -157,8 +156,6 @@ footer {
       size: 30px;
       weight: 300;
     }
-
-    ;
   }
 
   &__icono {
@@ -174,8 +171,6 @@ footer {
       size: 20px;
       weight: 100;
     }
-
-    ;
   }
 
   &__rrss--icono {
@@ -191,14 +186,12 @@ footer {
       size: 25px;
       weight: 200;
     }
-
-    ;
   }
 }
 
-/* --------------------------------- 
+/* -------------------------------
             ToggleMenu
---------------------------------- */
+---------------------------------*/
 
 .togglemenu {
   width: 100%;
@@ -215,7 +208,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 
   &__header {
     width: 80%;
@@ -282,7 +274,6 @@ footer {
 /* --------------------------------- 
                 Inicio
 --------------------------------- */
-
 .filtrado {
   width: 90%;
   max-width: 1240px;
@@ -322,12 +313,10 @@ footer {
 
   &__texto {
     @include gradients.gradient-blue-light;
-
     font: {
       size: 30px;
       weight: 400;
     }
-
     text-align: center;
     letter-spacing: 2px;
   }
@@ -634,9 +623,9 @@ footer {
 }
 
 
-/* --------------------------------- 
+/*-------------------------------
         Producto Individual
---------------------------------- */
+---------------------------------*/
 
 .productoI {
   width: 100%;
@@ -742,48 +731,14 @@ footer {
   }
 }
 
-/* --------------------------------- 
-        Preguntas Frecuentes
---------------------------------- */
 
-.pf {
-  width: 100%;
-  margin: 80px auto;
-
-  &__contenedor {
-    width: 80%;
-    max-width: 1040px;
-    margin: 30px auto;
-  }
-
-  &__titulo {
-    margin-bottom: 3px;
-    font-size: 26px;
-    letter-spacing: 2px;
-  }
-
-  &__descripcion {
-    font-size: 20px;
-    letter-spacing: 1px;
-
-    & a {
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-decoration: none;
-      color: var(--naranja-1);
-    }
-  }
-}
-
-
-/* --------------------------------- 
+/*--------------------------------- 
                Contacto
---------------------------------- */
+---------------------------------*/
 
 .contacto {
   width: 80%;
-  max-width: 1240px;
+  max-width: 1040px;
   margin: 40px auto;
   padding: 40px 0px;
   background-color: white;
@@ -882,6 +837,38 @@ footer {
   }
 }
 
+/* --------------------------------- 
+        Preguntas Frecuentes
+--------------------------------- */
+.pf {
+  width: 100%;
+  margin: 80px auto;
+
+  &__contenedor {
+    width: 80%;
+    max-width: 1040px;
+    margin: 30px auto;
+  }
+
+  &__titulo {
+    margin-bottom: 3px;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  &__descripcion {
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    & a {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-decoration: none;
+      color: var(--naranja-1);
+    }
+  }
+}
 
 /* ------------------------------- 
             Media Queries
@@ -889,8 +876,7 @@ footer {
 
 @media screen and (max-width: 1240px) {
 
-  /* --------------------------------- 
-    --------------------------------- */
+  /**************************/
   main {
     margin-top: 100px;
   }
@@ -952,9 +938,7 @@ footer {
     }
   }
 
-  /* --------------------------------- 
-                    Inicio
-    --------------------------------- */
+  /*************Inicio*************/
   .filtrado {
     display: none;
   }
@@ -981,23 +965,6 @@ footer {
     &__titulo {
       font-size: 2rem;
     }
-  }
-
-  .producto {
-    width: 150px;
-    height: auto;
-
-    &__titulo {
-      font-size: 12px;
-    }
-
-    &__boton--texto {
-      font-size: 24px;
-    }
-  }
-
-  .whatsapp-logo {
-    bottom: 220px;
   }
 
   .footer {
@@ -1029,6 +996,48 @@ footer {
     }
   }
 
+  /**************Inicio***************/
+  .producto {
+    width: 150px;
+    height: auto;
+
+    &__titulo {
+      font-size: 12px;
+    }
+
+    &__boton--texto {
+      font-size: 24px;
+    }
+  }
+
+  .whatsapp-logo {
+    bottom: 220px;
+  }
+
+  /************Contacto*************/
+  .contacto {
+    flex-flow: column;
+
+    &__contenedor {
+      width: 80%;
+      margin: 0px auto 10px auto;
+    }
+
+    &__texto {
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+    }
+    &__imagen {
+      display: none;
+    }
+
+    &__gradient, &__label {
+      width: 100%;
+    }
+  }
+
+  /******Preguntas Frecuentes*******/
   .pf{
     &__titulo {
       font-size: 20px;
@@ -1046,7 +1055,7 @@ footer {
 @media screen and (max-width: 426px) {
 
   main {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   header {
@@ -1056,46 +1065,15 @@ footer {
   .header {
     &__titulo {
       font-size: 1.5rem;
+      text-align: center;
+      width: 80%;
+      margin: auto;
     }
 
     &__logo {
       height: 50px;
     }
   }
-
-  .selectores__botones {
-    flex-direction: column;
-    align-items: center;
-
-    &--container {
-      margin: 0px 0px 15px 0px;
-    }
-  }
-
-  .productos__contenedor {
-    margin-top: 20px;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .producto {
-    width: 100px;
-    height: auto;
-
-    &__titulo {
-      font-size: 8px;
-    }
-
-    &__boton--texto {
-      font-size: 20px;
-    }
-  }
-
-  .whatsapp-logo {
-    bottom: 100px;
-    right: 20px;
-  }
-
 
   .footer {
     display: grid;
@@ -1138,6 +1116,54 @@ footer {
     &__items {
       font-size: 24px;
     }
+  }
+
+  /*************Inicio*************/
+  .selectores__botones {
+    flex-direction: column;
+    align-items: center;
+
+    &--container {
+      margin: 0px 0px 15px 0px;
+    }
+  }
+
+  .productos__contenedor {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .producto {
+    width: 100px;
+    height: auto;
+
+    &__titulo {
+      font-size: 8px;
+    }
+
+    &__boton--texto {
+      font-size: 20px;
+    }
+  }
+
+  .whatsapp-logo {
+    bottom: 100px;
+    right: 20px;
+  }
+
+  /************Contacto************/
+
+  .contacto {
+    padding: 30px 0px;
+    &__texto {
+      font-size: 16px;
+    }
+  }
+  /******Preguntas Frecuentes******/
+
+  .pf {
+    margin-top: 10px;
   }
     
 }

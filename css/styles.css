@@ -171,9 +171,9 @@ footer {
   font-weight: 200;
 }
 
-/* --------------------------------- 
+/* -------------------------------
             ToggleMenu
---------------------------------- */
+---------------------------------*/
 .togglemenu {
   width: 100%;
   height: 100dvh;
@@ -536,9 +536,9 @@ footer {
   width: 100%;
 }
 
-/* --------------------------------- 
+/*-------------------------------
         Producto Individual
---------------------------------- */
+---------------------------------*/
 .productoI {
   width: 100%;
   margin-bottom: 60px;
@@ -620,41 +620,12 @@ footer {
   margin-left: 20px;
 }
 
-/* --------------------------------- 
-        Preguntas Frecuentes
---------------------------------- */
-.pf {
-  width: 100%;
-  margin: 80px auto;
-}
-.pf__contenedor {
-  width: 80%;
-  max-width: 1040px;
-  margin: 30px auto;
-}
-.pf__titulo {
-  margin-bottom: 3px;
-  font-size: 26px;
-  letter-spacing: 2px;
-}
-.pf__descripcion {
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.pf__descripcion a {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-decoration: none;
-  color: var(--naranja-1);
-}
-
-/* --------------------------------- 
+/*--------------------------------- 
                Contacto
---------------------------------- */
+---------------------------------*/
 .contacto {
   width: 80%;
-  max-width: 1240px;
+  max-width: 1040px;
   margin: 40px auto;
   padding: 40px 0px;
   background-color: white;
@@ -735,12 +706,40 @@ footer {
   background-color: white;
 }
 
+/* --------------------------------- 
+        Preguntas Frecuentes
+--------------------------------- */
+.pf {
+  width: 100%;
+  margin: 80px auto;
+}
+.pf__contenedor {
+  width: 80%;
+  max-width: 1040px;
+  margin: 30px auto;
+}
+.pf__titulo {
+  margin-bottom: 3px;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+.pf__descripcion {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.pf__descripcion a {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: var(--naranja-1);
+}
+
 /* ------------------------------- 
             Media Queries
 ------------------------------ */
 @media screen and (max-width: 1240px) {
-  /* --------------------------------- 
-    --------------------------------- */
+  /**************************/
   main {
     margin-top: 100px;
   }
@@ -786,9 +785,7 @@ footer {
   .togglemenu__botones img {
     width: 100%;
   }
-  /* --------------------------------- 
-                    Inicio
-    --------------------------------- */
+  /*************Inicio*************/
   .filtrado {
     display: none;
   }
@@ -809,19 +806,6 @@ footer {
   }
   .header__titulo {
     font-size: 2rem;
-  }
-  .producto {
-    width: 150px;
-    height: auto;
-  }
-  .producto__titulo {
-    font-size: 12px;
-  }
-  .producto__boton--texto {
-    font-size: 24px;
-  }
-  .whatsapp-logo {
-    bottom: 220px;
   }
   .footer {
     margin: 15px auto;
@@ -845,6 +829,40 @@ footer {
     font-size: 16px;
     margin: 15px auto;
   }
+  /**************Inicio***************/
+  .producto {
+    width: 150px;
+    height: auto;
+  }
+  .producto__titulo {
+    font-size: 12px;
+  }
+  .producto__boton--texto {
+    font-size: 24px;
+  }
+  .whatsapp-logo {
+    bottom: 220px;
+  }
+  /************Contacto*************/
+  .contacto {
+    flex-flow: column;
+  }
+  .contacto__contenedor {
+    width: 80%;
+    margin: 0px auto 10px auto;
+  }
+  .contacto__texto {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+  .contacto__imagen {
+    display: none;
+  }
+  .contacto__gradient, .contacto__label {
+    width: 100%;
+  }
+  /******Preguntas Frecuentes*******/
   .pf__titulo {
     font-size: 20px;
   }
@@ -857,42 +875,19 @@ footer {
 }
 @media screen and (max-width: 426px) {
   main {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   header {
     height: auto;
   }
   .header__titulo {
     font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
   }
   .header__logo {
     height: 50px;
-  }
-  .selectores__botones {
-    flex-direction: column;
-    align-items: center;
-  }
-  .selectores__botones--container {
-    margin: 0px 0px 15px 0px;
-  }
-  .productos__contenedor {
-    margin-top: 20px;
-    justify-content: center;
-    gap: 40px;
-  }
-  .producto {
-    width: 100px;
-    height: auto;
-  }
-  .producto__titulo {
-    font-size: 8px;
-  }
-  .producto__boton--texto {
-    font-size: 20px;
-  }
-  .whatsapp-logo {
-    bottom: 100px;
-    right: 20px;
   }
   .footer {
     display: grid;
@@ -922,6 +917,44 @@ footer {
   }
   .togglemenu__items {
     font-size: 24px;
+  }
+  /*************Inicio*************/
+  .selectores__botones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .selectores__botones--container {
+    margin: 0px 0px 15px 0px;
+  }
+  .productos__contenedor {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 40px;
+  }
+  .producto {
+    width: 100px;
+    height: auto;
+  }
+  .producto__titulo {
+    font-size: 8px;
+  }
+  .producto__boton--texto {
+    font-size: 20px;
+  }
+  .whatsapp-logo {
+    bottom: 100px;
+    right: 20px;
+  }
+  /************Contacto************/
+  .contacto {
+    padding: 30px 0px;
+  }
+  .contacto__texto {
+    font-size: 16px;
+  }
+  /******Preguntas Frecuentes******/
+  .pf {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 375px) {
