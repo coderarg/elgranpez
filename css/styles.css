@@ -932,7 +932,6 @@ footer {
     gap: 40px;
   }
   .producto {
-    width: 100px;
     height: auto;
   }
   .producto__titulo {
