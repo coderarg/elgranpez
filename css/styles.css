@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ---------------------------------- 
+   genéricos para todas las páginas
+ ---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +19,6 @@ main {
   flex-grow: 1;
 }
 
-/* ---------------------------------- 
-   genéricos para todas las páginas
- ---------------------------------- */
 @font-face {
   font-family: Oswald-Regular;
   src: url(../recursos/tipografia/static/Oswald-Regular.ttf);
@@ -551,7 +551,7 @@ footer {
 }
 .productoI__titulo {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 40px 0px;
   font-size: 40px;
   font-weight: 300;
   text-align: center;
@@ -795,6 +795,35 @@ footer {
   .paginador {
     width: 90%;
   }
+  .productoI__container {
+    gap: 5%;
+  }
+  .productoI__miniaturas {
+    width: 20%;
+    gap: 40px;
+  }
+  .productoI__miniaturas--img {
+    width: 100%;
+  }
+  .productoI__ampliado {
+    width: 70%;
+  }
+  .productoI__ampliado--img {
+    width: 100%;
+  }
+  .productoI__botones {
+    margin: 60px auto;
+    justify-content: center;
+    gap: 5%;
+  }
+  .productoI__consultar, .productoI__whatsapp {
+    width: 45%;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .productoI__consultar p, .productoI__whatsapp p {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 820px) {
   header {
@@ -835,6 +864,61 @@ footer {
   }
   .whatsapp-logo {
     bottom: 220px;
+  }
+  /*****Producto Individual******/
+  .productoI__titulo {
+    margin: 30px auto 0px auto;
+    font-size: 25px;
+  }
+  .productoI__container {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productoI__miniaturas {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: normal;
+    margin: 4%;
+  }
+  .productoI__miniaturas--img {
+    width: 22%;
+  }
+  .productoI__ampliado {
+    width: 100%;
+  }
+  .productoI__ampliado--img {
+    width: 100%;
+  }
+  .productoI__descripcion {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .productoI__botones {
+    width: 80%;
+    margin-top: 40px;
+  }
+  .productoI__consultar, .productoI__whatsapp {
+    border: 4px solid black;
+    height: 50px;
+  }
+  .productoI__consultar p, .productoI__whatsapp p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .productoI__consultar {
+    border: 3px solid var(--naranja-1);
+    color: var(--naranja-1);
+  }
+  .productoI__whatsapp {
+    border: 3px solid var(--azul-2);
+    color: var(--azul-2);
+  }
+  .productoI__whatsapp--img {
+    height: 40px;
+    margin-left: 10px;
   }
   /************Contacto*************/
   .contacto {
@@ -932,6 +1016,29 @@ footer {
   .whatsapp-logo {
     bottom: 100px;
     right: 20px;
+  }
+  .productoI {
+    margin-bottom: 10px;
+  }
+  .productoI__titulo {
+    margin: 10px auto 0px auto;
+    font-size: 18px;
+  }
+  .productoI__descripcion {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .productoI__botones {
+    margin: 20px auto 40px auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productoI__consultar, .productoI__whatsapp {
+    width: 100%;
+    height: 50px;
+  }
+  .productoI__consultar p, .productoI__whatsapp p {
+    font-weight: 700;
   }
   /************Contacto************/
   .contacto {
