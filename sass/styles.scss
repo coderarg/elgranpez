@@ -77,7 +77,6 @@ header {
       weight: 400;
     }
 
-    text-decoration: none;
     @include gradients.gradient-blue-light;
 
     &:hover {
@@ -140,7 +139,6 @@ footer {
   }
 
   &__container {
-    text-decoration: none;
     color: white;
   }
 
@@ -181,7 +179,6 @@ footer {
 
   &__creacion {
     margin: 30px auto;
-    text-decoration: none;
     color: white;
 
     font: {
@@ -252,7 +249,6 @@ footer {
   }
 
   &__items {
-    text-decoration: none;
     font-size: 40px;
     text-align: center;
     margin: 40px auto;
@@ -871,7 +867,6 @@ footer {
       font-size: 24px;
       font-weight: 600;
       letter-spacing: 3px;
-      text-decoration: none;
       color: var(--naranja-1);
     }
   }

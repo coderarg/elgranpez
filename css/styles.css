@@ -19,6 +19,10 @@ main {
   flex-grow: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: Oswald-Regular;
   src: url(../recursos/tipografia/static/Oswald-Regular.ttf);
@@ -79,7 +83,6 @@ header {
 .header__items {
   font-size: 30px;
   font-weight: 400;
-  text-decoration: none;
   background: linear-gradient(50deg, #4EA6FF 15%, #00478F 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -138,7 +141,6 @@ footer {
   height: 80px;
 }
 .footer__container {
-  text-decoration: none;
   color: white;
 }
 .footer__titulo {
@@ -167,7 +169,6 @@ footer {
 }
 .footer__creacion {
   margin: 30px auto;
-  text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: 200;
@@ -222,7 +223,6 @@ footer {
   flex-direction: column;
 }
 .togglemenu__items {
-  text-decoration: none;
   font-size: 40px;
   text-align: center;
   margin: 40px auto;
@@ -736,7 +736,6 @@ footer {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 3px;
-  text-decoration: none;
   color: var(--naranja-1);
 }
 
