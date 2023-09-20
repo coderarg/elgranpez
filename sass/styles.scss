@@ -516,6 +516,7 @@ footer {
 .producto {
   width: 200px;
   margin-bottom: 30px;
+  padding-top: 10px;
   position: relative;
   border-radius: 10px;
   background-color: white;
@@ -539,14 +540,24 @@ footer {
     content: '';
   }
 
+  &__img-container{
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
   &__img {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     color: black;
     cursor: pointer;
     width: 100%;
 
     //Máscara de lupa en hover
-    &:hover {
+    /* &:hover {
       -webkit-mask-image: url(../recursos/nav_menu/lupa-producto.png);
       mask-image: url(../recursos/nav_menu/lupa-producto.png);
       mask-repeat: no-repeat;
@@ -555,11 +566,14 @@ footer {
       -webkit-mask-size: 70%;
       mask-position: 50% 50%;
       -webkit-mask-position: 50% 50%;
-    }
+    } */
   }
 
   &__titulo {
     padding: 0px 15px;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
 
     font: {
       size: 16px;

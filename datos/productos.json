@@ -5,10 +5,10 @@
    "titulo": "Ensaladera Bowl 13cm",
    "descripcion": "Diámetro: 13 cm. Altura: 4.2 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 1234,
-   "-1.png": "c0001-1.png",
-   "-2.png": "c0001-2.png",
-   "-3.png": "c0001-3.png",
-   "-4.png": "c0001-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -17,10 +17,10 @@
    "titulo": "Ensaladera Bowl 15cm",
    "descripcion": "Diámetro: 15 cm. Altura: 4.2 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0002-1.png",
-   "-2.png": "c0002-2.png",
-   "-3.png": "c0002-3.png",
-   "-4.png": "c0002-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -29,10 +29,10 @@
    "titulo": "Ensaladera Bowl 17cm",
    "descripcion": "Diámetro: 17 cm. Altura: 4.6 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0003-1.png",
-   "-2.png": "c0003-2.png",
-   "-3.png": "c0003-3.png",
-   "-4.png": "c0003-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -41,10 +41,10 @@
    "titulo": "Ensaladera Bowl 19cm",
    "descripcion": "Diámetro: 19 cm. Altura: 5.1 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0004-1.png",
-   "-2.png": "c0004-2.png",
-   "-3.png": "c0004-3.png",
-   "-4.png": "c0004-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -53,10 +53,10 @@
    "titulo": "Ensaladera Bowl 21cm",
    "descripcion": "Diámetro: 21 cm. Altura: 5.5 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0005-1.png",
-   "-2.png": "c0005-2.png",
-   "-3.png": "c0005-3.png",
-   "-4.png": "c0005-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -65,10 +65,10 @@
    "titulo": "Ensaladera Bowl 23cm",
    "descripcion": "Diámetro: 23 cm. Altura: 5.9 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0006-1.png",
-   "-2.png": "c0006-2.png",
-   "-3.png": "c0006-3.png",
-   "-4.png": "c0006-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -77,10 +77,10 @@
    "titulo": "Ensaladera Bowl 25cm",
    "descripcion": "Diámetro: 25 cm. Altura: 6.2 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0007-1.png",
-   "-2.png": "c0007-2.png",
-   "-3.png": "c0007-3.png",
-   "-4.png": "c0007-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -88,10 +88,10 @@
    "codigo_producto": "c0008",
    "titulo": "Ensaladera Bowl 27cm (No encontrado)",
    "precio": 123456,
-   "-1.png": "c0008-1.png",
-   "-2.png": "c0008-2.png",
-   "-3.png": "c0008-3.png",
-   "-4.png": "c0008-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -100,10 +100,10 @@
    "titulo": "Ensaladera Bowl 30cm",
    "descripcion": "Diámetro: 30 cm. Altura: 7.8 cm. Material: Acero Inoxidable. Apto para refrigerador, congelador y lavavajillas.",
    "precio": 123456,
-   "-1.png": "c0009-1.png",
-   "-2.png": "c0009-2.png",
-   "-3.png": "c0009-3.png",
-   "-4.png": "c0009-4.png",
+   "img1": "c0001-1.png",
+   "img2": "c0001-2.png",
+   "img3": "c0001-3.png",
+   "img4": "c0001-4.png",
    "categoria": "cocina"
   },
   {
@@ -112,10 +112,10 @@
    "titulo": "Cucharita Cerámica Postre Café",
    "descripcion": "Largo: 125mm. Material: Cerámica.",
    "precio": 123456,
-   "-1.png": "c0010-1.png",
-   "-2.png": "c0010-2.png",
-   "-3.png": "c0010-3.png",
-   "-4.png": "c0010-4.png",
+   "img1": "c0010-1.png",
+   "img2": "c0010-2.png",
+   "img3": "c0010-3.png",
+   "img4": "c0010-4.png",
    "categoria": "cocina"
   },
   {
@@ -124,10 +124,10 @@
    "titulo": "Esfera Decorativa Flores Tela Topiario",
    "descripcion": "Diámetro : 15cm",
    "precio": 123456,
-   "-1.png": "d0001-1.png",
-   "-2.png": "d0001-2.png",
-   "-3.png": "d0001-3.png",
-   "-4.png": "d0001-4.png",
+   "img1": "d0001-1.png",
+   "img2": "d0001-2.png",
+   "img3": "d0001-3.png",
+   "img4": "d0001-4.png",
    "categoria": "decoracion"
   },
   {
@@ -136,10 +136,10 @@
    "titulo": "Ejemplo",
    "descripcion": "Ejemplo",
    "precio": 123456,
-   "-1.png": "e0001-1.png",
-   "-2.png": "e0001-2.png",
-   "-3.png": "e0001-3.png",
-   "-4.png": "e0001-4.png",
+   "img1": "e0001-1.png",
+   "img2": "e0001-2.png",
+   "img3": "e0001-3.png",
+   "img4": "e0001-4.png",
    "categoria": "ejemplo"
   },
   {
@@ -148,7 +148,7 @@
    "titulo": "Imán Neodimio Circular",
    "descripcion": "Alto: 1mm. Diámetro: 7mm. Material: Neodimio",
    "precio": 123456,
-   "-1.png": "h0001-1.png",
+   "img1": "h0001-1.png",
    "categoria": "herramientas"
   },
   {
@@ -157,10 +157,10 @@
    "titulo": "Imán Semillas Magnéticas",
    "descripcion": "Largo: 38mm. Diámetro: 14mm",
    "precio": 123456,
-   "-1.png": "h0002-1.png",
-   "-2.png": "h0002-2.png",
-   "-3.png": "h0002-3.png",
-   "-4.png": "h0002-4.png",
+   "img1": "h0002-1.png",
+   "img2": "h0002-2.png",
+   "img3": "h0002-3.png",
+   "img4": "h0002-4.png",
    "categoria": "herramientas"
   },
   {
@@ -169,10 +169,10 @@
    "titulo": "Mosquitero Magnético Para Puertas",
    "descripcion": "Ancho 1 m (2 paños de 50cm). Alto 2.10 m. Material: Poliester. Lleva chinches para fijar a la puerta.",
    "precio": 123456,
-   "-1.png": "ho0001-1.png",
-   "-2.png": "ho0001-2.png",
-   "-3.png": "ho0001-3.png",
-   "-4.png": "ho0001-4.png",
+   "img1": "ho0001-1.png",
+   "img2": "ho0001-2.png",
+   "img3": "ho0001-3.png",
+   "img4": "ho0001-4.png",
    "categoria": "hogar"
   },
   {
@@ -181,9 +181,9 @@
    "titulo": "Broches Metálicos de Colores",
    "descripcion": "Material: Metal.",
    "precio": 123456,
-   "-1.png": "ho0002-1.png",
-   "-2.png": "ho0002-2.png",
-   "-3.png": "ho0002-3.png",
+   "img1": "ho0002-1.png",
+   "img2": "ho0002-2.png",
+   "img3": "ho0002-3.png",
    "categoria": "hogar"
   },
   {
@@ -192,10 +192,10 @@
    "titulo": "Mosquitero Para Ventana",
    "descripcion": "Ancho: 130 cm. Alto: 150 cm. Material: Poliester",
    "precio": 123456,
-   "-1.png": "ho0003-1.png",
-   "-2.png": "ho0003-2.png",
-   "-3.png": "ho0003-3.png",
-   "-4.png": "ho0003-4.png",
+   "img1": "ho0003-1.png",
+   "img2": "ho0003-2.png",
+   "img3": "ho0003-3.png",
+   "img4": "ho0003-4.png",
    "categoria": "hogar"
   },
   {
@@ -204,8 +204,8 @@
    "titulo": "Tapón Válvula Colchón Inflable Pileta Lona",
    "descripcion": "Diámetro de rosca: 20 mm. Largo de rosca: 16mm.",
    "precio": 123456,
-   "-1.png": "ho0004-1.png",
-   "-2.png": "ho0004-2.png",
+   "img1": "ho0004-1.png",
+   "img2": "ho0004-2.png",
    "categoria": "hogar"
   },
   {
@@ -214,10 +214,10 @@
    "titulo": "Bolsa Ecológica Para Compras Grande",
    "descripcion": "Alto: 60 cm. Ancho: 80 cm. Profundidad: 28 cm\nMaterial: Lona. Producto Ecológico. Cierre por Cremallera",
    "precio": 123456,
-   "-1.png": "m0001-1.png",
-   "-2.png": "m0001-2.png",
-   "-3.png": "m0001-3.png",
-   "-4.png": "m0001-4.png",
+   "img1": "m0001-1.png",
+   "img2": "m0001-2.png",
+   "img3": "m0001-3.png",
+   "img4": "m0001-4.png",
    "categoria": "mochilas"
   },
   {
@@ -226,10 +226,10 @@
    "titulo": "Bolsa Ecológica Para Compras",
    "descripcion": "Alto: 50 cm, Ancho: 60 cm, Profundidad: 25 cm\nMaterial: Lona, Producto Ecológico, Cierre por Cremallera.",
    "precio": 123456,
-   "-1.png": "m0002-1.png",
-   "-2.png": "m0002-2.png",
-   "-3.png": "m0002-3.png",
-   "-4.png": "m0002-4.png",
+   "img1": "m0001-1.png",
+   "img2": "m0001-2.png",
+   "img3": "m0001-3.png",
+   "img4": "m0001-4.png",
    "categoria": "mochilas"
   },
   {
@@ -238,9 +238,9 @@
    "titulo": "Bandeja Pollería Carnicería Granja 40x30",
    "descripcion": "Largo: 40 cm. Ancho: 30 cm. Altura: 9 cm",
    "precio": 123456,
-   "-1.png": "c0011-1.png",
-   "-2.png": "c0011-2.png",
-   "-3.png": "c0011-3.png",
+   "img1": "c0011-1.png",
+   "img2": "c0011-2.png",
+   "img3": "c0011-3.png",
    "categoria": "cocina"
   }
  ]
