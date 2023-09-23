@@ -81,7 +81,7 @@ const cargarProductos = (prods) => {
       </div>
       <h3 class="producto__titulo">${element.titulo}</h3>
       <div class="producto__boton">
-        <p class="producto__boton--precio">$ <span id="prod__precio">${element.precio.toString()}</span></p>
+        <p class="producto__boton--precio"><span id="prod__precio">${numToPrice(element.precio)}</span></p>
       </div>
       `;
       
@@ -96,13 +96,11 @@ const activeProds = (list) => {
   return active.length;
 }
 
-const numToPrice = () => {
-  //posibles entradas: 1 / 12 / 123, 1234, 1234.23 / 1234.2 / 123 / 
-  //pasarlo a string
-  //reemplazar el punto . del decimal por una coma ,
-  //si hay 1 número después de la coma, agregar un cero 0
-  //si los enteros son más de mil, agregar un . en los miles
-
-  // Posibles soluciones:
-  //Separar decimales, y miles 
+const numToPrice = (num) => {
+  const f = new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency: 'ARS',
+    minimumFractionDigits: 2
+  })
+  return(f.format(num))
 }
