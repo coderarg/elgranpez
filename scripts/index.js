@@ -1,14 +1,21 @@
-//VARIABLES Y DOM
+//FILTROS DOM
 const filtrosBTN = document.querySelector('#filtrosBTN')
 const filtros = document.querySelector('#filtros');
 const categorias = document.querySelectorAll('.selectores__cat');
 const togglemenuFiltros = document.querySelector('#togglemenu--filtros');
 const headerFiltros = document.querySelector('#header--botonFiltros');
 let filtrosOpen = false;
-const prodRoot = document.querySelector('#prod-root')
-let productos;
-const numeroResultados = document.querySelector('#numero-resultados');
 
+//PRODUCTOS DOM
+const numeroResultados = document.querySelector('#numero-resultados');
+const prodRoot = document.querySelector('#prod-root');
+let prodArray;
+
+
+const wordsArray = [];
+
+
+// Eventos
 filtrosBTN.addEventListener('click', (e) => {
   e.preventDefault();
   if (filtrosOpen) {
@@ -20,6 +27,7 @@ filtrosBTN.addEventListener('click', (e) => {
   };
 });
 
+
 headerFiltros.addEventListener('click', (e) => {
   e.preventDefault();
   if (filtrosOpen) {
@@ -30,6 +38,7 @@ headerFiltros.addEventListener('click', (e) => {
     filtrosOpen = true;
   };
 });
+
 
 togglemenuFiltros.addEventListener('click', (e) => {
   e.preventDefault();
@@ -44,37 +53,33 @@ togglemenuFiltros.addEventListener('click', (e) => {
 
 });
 
+
 categorias.forEach((cat) => {
   cat.addEventListener('click', (e) => {
     e.preventDefault();
   });
 });
 
-
 fetch("../datos/productos.json")
-    .then(res => res.json())
-    .then(json => {
-        productos = [...json]
-    
-        cargarProductos(productos);
-    })
-
+  .then(res => res.json())
+  .then(json => {
+    productos = [...json];
+    cargarProductos(productos);
+  })
 
 const cargarProductos = (prods) => {
-  prodRoot.innerHTML ='';
+  prodRoot.innerHTML = '';
 
   numeroResultados.textContent = activeProds(prods).toString();
 
+  prods.forEach((element) => {
 
-  
-  prods.forEach( (element) => {
 
-    
-    if(element.activo === 1) {
+    if (element.activo === 1) {
 
       const div = document.createElement('div');
       div.classList.add('producto')
-      
+
       div.innerHTML = `
       <div class="producto__img-container">
         <img src="./recursos/productos/${element.img1}" alt="${element.titulo}" class="producto__img">
@@ -84,15 +89,16 @@ const cargarProductos = (prods) => {
         <p class="producto__boton--precio"><span id="prod__precio">${numToPrice(element.precio)}</span></p>
       </div>
       `;
-      
+
       prodRoot.append(div);
     }
-     
+
   })
 }
 
+
 const activeProds = (list) => {
-  const active = list.filter( e => e.activo === 1)
+  const active = list.filter(e => e.activo === 1)
   return active.length;
 }
 
@@ -102,5 +108,51 @@ const numToPrice = (num) => {
     currency: 'ARS',
     minimumFractionDigits: 2
   })
-  return(f.format(num))
+  return (f.format(num))
 }
+
+const buscarProductos = (e) => {
+  e.preventDefault();
+
+  wordsArray.length = 0;
+  wordsArray.push(...document.querySelector('#barra__buscar').value.toLowerCase().split(' '));
+
+}
+
+
+/* const searchProducts = (e) => {
+    
+  e.preventDefault()
+  const duplicatedSearch = [];
+  resultProducts.length = 0;
+  searchedWords.length = 0;
+
+  let words = document.querySelector('#barra__buscar').value.toLowerCase();
+  searchedWords.push(...words.split(' '));
+
+  searchedWords.forEach((element)=>{
+      let result = productos.filter((prodItem) => {
+          return prodItem.titulo.toLowerCase().includes(element);
+      })
+
+      duplicatedSearch.push(...result);
+
+  })
+
+  const filteredResult = duplicatedSearch.reduce((sum, element) => {
+      if(!sum.find(prod => prod.titulo == element.titulo)) {
+          sum.push(element);
+      }
+      return sum;
+      }, 
+  [])
+
+  resultProducts.push(...filteredResult);
+
+  loadProducts(resultProducts);
+
+  categoryButtons.forEach(button => button.classList.remove("active__btn"))
+  prodTitle.innerText = "Resultado de búsqueda";
+  filterbar.style.top = "-500px";
+  filterActive = true;
+} */

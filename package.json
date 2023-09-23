@@ -1,20 +1,16 @@
 {
   "name": "elgranpez",
   "version": "1.0.0",
-  "main": "/scripts/index.js",
-  "type": "module",
+  "description": "Sitio web a medida para tienda mayorista.",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node /scripts/index.js",
     "sass": "sass --watch sass:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "directories": {
-    "doc": "docs"
-  },
-  "description": "",
-  "devDependencies": {
-    "sass": "^1.66.1"
+  "dependencies": {
+    "sass": "^1.68.0"
   }
 }
