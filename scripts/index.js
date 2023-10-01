@@ -1,70 +1,17 @@
-//FILTROS DOM
-const filtrosBTN = document.querySelector('#filtrosBTN')
-const filtros = document.querySelector('#filtros');
-const categorias = document.querySelectorAll('.selectores__cat');
-const togglemenuFiltros = document.querySelector('#togglemenu--filtros');
-const headerFiltros = document.querySelector('#header--botonFiltros');
-let filtrosOpen = false;
+import './toggleMenu.js';
+import './filtros.js';
 
-//PRODUCTOS DOM
+//DOM y Variables
 const numeroResultados = document.querySelector('#numero-resultados');
 const prodRoot = document.querySelector('#prod-root');
-let prodArray;
+let prodArray = [];
 
-
-const wordsArray = [];
-
-
-// Eventos
-filtrosBTN.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (filtrosOpen) {
-    filtros.style.top = '-1000px';
-    filtrosOpen = false;
-  } else {
-    filtros.style.top = '4px';
-    filtrosOpen = true;
-  };
-});
-
-
-headerFiltros.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (filtrosOpen) {
-    filtros.style.top = '-1000px';
-    filtrosOpen = false;
-  } else {
-    filtros.style.top = '4px';
-    filtrosOpen = true;
-  };
-});
-
-
-togglemenuFiltros.addEventListener('click', (e) => {
-  e.preventDefault();
-  toggleMenu.style.left = '100vw';
-  if (filtrosOpen) {
-    filtros.style.top = '-1000px';
-    filtrosOpen = false;
-  } else {
-    filtros.style.top = '4px';
-    filtrosOpen = true;
-  };
-
-});
-
-
-categorias.forEach((cat) => {
-  cat.addEventListener('click', (e) => {
-    e.preventDefault();
-  });
-});
 
 fetch("../datos/productos.json")
   .then(res => res.json())
   .then(json => {
-    productos = [...json];
-    cargarProductos(productos);
+    prodArray = [...json];
+    cargarProductos(prodArray);
   })
 
 const cargarProductos = (prods) => {
@@ -96,7 +43,6 @@ const cargarProductos = (prods) => {
   })
 }
 
-
 const activeProds = (list) => {
   const active = list.filter(e => e.activo === 1)
   return active.length;
@@ -110,49 +56,3 @@ const numToPrice = (num) => {
   })
   return (f.format(num))
 }
-
-const buscarProductos = (e) => {
-  e.preventDefault();
-
-  wordsArray.length = 0;
-  wordsArray.push(...document.querySelector('#barra__buscar').value.toLowerCase().split(' '));
-
-}
-
-
-/* const searchProducts = (e) => {
-    
-  e.preventDefault()
-  const duplicatedSearch = [];
-  resultProducts.length = 0;
-  searchedWords.length = 0;
-
-  let words = document.querySelector('#barra__buscar').value.toLowerCase();
-  searchedWords.push(...words.split(' '));
-
-  searchedWords.forEach((element)=>{
-      let result = productos.filter((prodItem) => {
-          return prodItem.titulo.toLowerCase().includes(element);
-      })
-
-      duplicatedSearch.push(...result);
-
-  })
-
-  const filteredResult = duplicatedSearch.reduce((sum, element) => {
-      if(!sum.find(prod => prod.titulo == element.titulo)) {
-          sum.push(element);
-      }
-      return sum;
-      }, 
-  [])
-
-  resultProducts.push(...filteredResult);
-
-  loadProducts(resultProducts);
-
-  categoryButtons.forEach(button => button.classList.remove("active__btn"))
-  prodTitle.innerText = "Resultado de búsqueda";
-  filterbar.style.top = "-500px";
-  filterActive = true;
-} */

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Sitio web a medida para tienda mayorista.",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "sass": "sass --watch sass:css"
   },
