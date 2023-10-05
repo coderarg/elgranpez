@@ -1,5 +1,6 @@
 import './toggleMenu.js';
 import './filtros.js';
+import './buscar.js';
 
 //DOM y Variables
 const numeroResultados = document.querySelector('#numero-resultados');

@@ -1,11 +1,10 @@
 //DOM y Variables
-import {prodArray, cargarProductos} from "./index.js";
+import { prodArray, cargarProductos } from "./index.js";
 
 const buscarBotton = document.querySelector('#boton__buscar');
 const buscarInput = document.querySelector('#barra__buscar');
 
-const buscarProductos = (e) => {
-  e.preventDefault();
+const buscarProductos = () => {
   
   const palabrasInput = [];
   const productosDuplicados = [];
@@ -14,7 +13,7 @@ const buscarProductos = (e) => {
 
   palabrasInput.forEach(palabra => {
     prodArray.forEach(producto => {
-      if(producto.titulo.includes(palabra)) {
+      if(producto.titulo.toLowerCase().includes(palabra)) {
         productosDuplicados.push(producto);
       }
     })
@@ -24,7 +23,21 @@ const buscarProductos = (e) => {
     if(!sum.find(item => item.titulo === prod.titulo)) sum.push(prod);
     return sum;
   }, [])
+
+  cargarProductos(productosSinDuplicar)
 }
+
+buscarBotton.addEventListener('click', (e)=> {
+  e.preventDefault();
+  buscarProductos();
+});
+
+buscarInput.addEventListener('keyup', (e)=>{
+  if(e.keyCode === 13){
+    buscarProductos();
+  }
+})
+
 
 
 /* const searchProducts = (e) => {
