@@ -4,7 +4,7 @@ import './filtros.js';
 //DOM y Variables
 const numeroResultados = document.querySelector('#numero-resultados');
 const prodRoot = document.querySelector('#prod-root');
-let prodArray = [];
+export let prodArray = [];
 
 
 fetch("../datos/productos.json")
@@ -14,7 +14,7 @@ fetch("../datos/productos.json")
     cargarProductos(prodArray);
   })
 
-const cargarProductos = (prods) => {
+export const cargarProductos = (prods) => {
   prodRoot.innerHTML = '';
 
   numeroResultados.textContent = activeProds(prods).toString();

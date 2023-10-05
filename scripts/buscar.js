@@ -1,18 +1,29 @@
 //DOM y Variables
-const wordsArray = [];
+import {prodArray, cargarProductos} from "./index.js";
+
+const buscarBotton = document.querySelector('#boton__buscar');
+const buscarInput = document.querySelector('#barra__buscar');
 
 const buscarProductos = (e) => {
   e.preventDefault();
+  
+  const palabrasInput = [];
+  const productosDuplicados = [];
 
-  wordsArray.length = 0;
-  wordsArray.push(...document.querySelector('#barra__buscar').value.toLowerCase().split(' '));
+  palabrasInput.push(...buscarInput.value.toLowerCase().split(' '));
 
-
- //Guardarlas en un array
-
- //buscar los productos 
- 
- // eliminar duplicados
+  palabrasInput.forEach(palabra => {
+    prodArray.forEach(producto => {
+      if(producto.titulo.includes(palabra)) {
+        productosDuplicados.push(producto);
+      }
+    })
+  })
+  
+  const productosSinDuplicar = productosDuplicados.reduce((sum, prod) => {
+    if(!sum.find(item => item.titulo === prod.titulo)) sum.push(prod);
+    return sum;
+  }, [])
 }
 
 
