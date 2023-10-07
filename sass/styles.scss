@@ -367,6 +367,7 @@ footer {
     background-color: transparent;
     padding: 6px 20px;
     outline: none;
+    flex-grow: 1;
 
     font: {
       size: 25px;
@@ -553,7 +554,6 @@ footer {
   &__img {
     border-radius: 10px;
     color: black;
-    cursor: pointer;
     width: 100%;
 
     //Máscara de lupa en hover
@@ -955,14 +955,25 @@ footer {
   }
 
   /*************Inicio*************/
+
   .filtrado {
+    flex-direction: column;
+  }
+  .filtros{
     display: none;
   }
 
   .paginador {
     width: 90%;
   }
-
+  
+  .resultados {
+    order: 2;
+  }
+  .buscar {
+    order: 1;
+    margin-bottom: 10px;
+  }
 
   .productoI {
   
@@ -1194,6 +1205,17 @@ footer {
 
     &__logo {
       height: 70px;
+    }
+  }
+
+  .resultados {
+    width: 100%;
+  }
+  .buscar {
+    width: 100%;
+
+    &__boton {
+      display: none;
     }
   }
 
