@@ -478,15 +478,6 @@ footer {
   border-radius: 12px;
   content: "";
 }
-.producto__img-container {
-  width: 190px;
-  height: 190px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
 .producto__img {
   border-radius: 10px;
   color: black;
@@ -501,6 +492,15 @@ footer {
     mask-position: 50% 50%;
     -webkit-mask-position: 50% 50%;
   } */
+}
+.producto__img-container {
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 .producto__titulo {
   padding: 0px 15px;

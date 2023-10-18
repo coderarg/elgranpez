@@ -541,21 +541,11 @@ footer {
     content: '';
   }
 
-  &__img-container{
-    width: 190px;
-    height: 190px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-  }
-
+  
   &__img {
     border-radius: 10px;
     color: black;
     width: 100%;
-
     //Máscara de lupa en hover
     /* &:hover {
       -webkit-mask-image: url(../recursos/nav_menu/lupa-producto.png);
@@ -567,6 +557,17 @@ footer {
       mask-position: 50% 50%;
       -webkit-mask-position: 50% 50%;
     } */
+    
+    &-container{
+      width: 190px;
+      height: 190px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+
   }
 
   &__titulo {
