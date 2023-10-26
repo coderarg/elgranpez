@@ -81,6 +81,8 @@ const cargarProductoIndividual = () => {
   rootProdI.append(prodIContainer);
   rootProdI.append(prodBotones);
 
+  activarMiniaturas();
+
 };
 
 
@@ -91,4 +93,14 @@ const numToPrice = (num) => {
     minimumFractionDigits: 2
   })
   return (f.format(num))
+}
+
+const activarMiniaturas = () => {
+  const miniaturas = document.querySelectorAll('.productoI__miniaturas--img');
+
+  miniaturas.forEach((mini) => {
+    mini.addEventListener('click', ()=>{
+      
+    })
+  })
 }
