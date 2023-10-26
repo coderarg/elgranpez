@@ -9,6 +9,7 @@ const buscarLupa = document.querySelector('.buscar__logo');
 const numeroResultados = document.querySelector('#numero-resultados');
 const prodRoot = document.querySelector('#prod-root');
 let prodArray = [];
+const productos = [];
 
 const filtrosBTN = document.querySelector('#filtrosBTN')
 const filtros = document.querySelector('#filtros');
@@ -29,6 +30,7 @@ fetch("../datos/productos.json")
     prodArray = [...json];
     cargarProductos(prodArray);
   })
+
 
 
 /*******************************************
