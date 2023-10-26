@@ -40,6 +40,7 @@ buscarBotton.addEventListener('click', (e) => {
   e.preventDefault();
   buscarProductos();
 });
+
 buscarLupa.addEventListener('click', (e) => {
   e.preventDefault();
   buscarProductos();
@@ -60,10 +61,10 @@ filtrosBTN.addEventListener('click', (e) => {
 headerFiltros.addEventListener('click', (e) => {
   e.preventDefault();
   if (filtrosOpen) {
-    filtros.style.top = '-1000px';
+    filtros.style.top = '-1300px';
     filtrosOpen = false;
   } else {
-    filtros.style.top = '4px';
+    filtros.style.top = '-250px';
     filtrosOpen = true;
   };
 });
