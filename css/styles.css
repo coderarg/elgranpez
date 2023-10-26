@@ -494,7 +494,7 @@ footer {
   } */
 }
 .producto__img-container {
-  width: 190px;
+  width: 95%;
   height: 190px;
   overflow: hidden;
   display: flex;
@@ -876,9 +876,6 @@ footer {
     margin: 15px auto;
   }
   /**************Inicio***************/
-  .producto {
-    height: auto;
-  }
   .producto__titulo {
     margin: 5px auto;
     font-size: 16px;
