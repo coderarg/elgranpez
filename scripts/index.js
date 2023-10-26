@@ -170,7 +170,7 @@ const cargarBotonesProductos = () => {
       idElementoSeleccionado = (e.target.tagName === "IMG") ? e.target.parentNode.id : e.target.id;
       localStorage.setItem('producto', idElementoSeleccionado);
       //const nuevaPantalla = window.open();
-      window.location = 'http://localhost:5500/html/producto.html';
+      window.location = './html/producto.html';
     })
   })
 }
