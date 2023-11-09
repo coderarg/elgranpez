@@ -242,28 +242,29 @@
    "img2": "c0011-2.png",
    "img3": "c0011-3.png",
    "categoria": "cocina"
-  },{
-      "activo": "1",
-      "codigo_producto": "c0001",
-      "titulo": "Ensaladera Bowl 13cm 10 unidades",
-      "descripcion": "MEDIDAS: Diámetro: 13 cm Altura: 4.2 cm Material: Acero Inoxidable Apto para refrigerador, congelador y lavavajillas.",
-      "precio": "5,450.00",
-      "-1.png": "c0001-1.png",
-      "-2.png": "c0001-2.png",
-      "-3.png": "c0001-3.png",
-      "-4.png": "c0001-4.png",
-      "categoria ": "cocina "
   },
   {
-      "activo": "1",
-      "codigo_producto": "c0002",
-      "titulo": "Ensaladera Bowl 15cm 10 unidades",
-      "descripcion": "MEDIDAS:  Diámetro: 15 cm Altura: 4.2 cm Material: Acero Inoxidable Apto para refrigerador, congelador y lavavajillas.",
-      "precio": "6,350.00",
-      "-1.png": "c0002-1.png",
-      "-2.png": "c0002-2.png",
-      "-3.png": "c0002-3.png",
-      "-4.png": "c0002-4.png",
-      "categoria ": "cocina"
+    "activo": "1",
+    "codigo_producto": "c0001",
+    "titulo": "Ensaladera Bowl 13cm 10 unidades",
+    "descripcion": "MEDIDAS: Diámetro: 13 cm Altura: 4.2 cm Material: Acero Inoxidable Apto para refrigerador, congelador y lavavajillas.",
+    "precio": "5,450.00",
+    "1.png": "c0001-1.png",
+    "2.png": "c0001-2.png",
+    "3.png": "c0001-3.png",
+    "4.png": "c0001-4.png",
+    "categoria ": "cocina "
+  },
+  {
+    "activo": "1",
+    "codigo_producto": "c0002",
+    "titulo": "Ensaladera Bowl 15cm 10 unidades",
+    "descripcion": "MEDIDAS:  Diámetro: 15 cm Altura: 4.2 cm Material: Acero Inoxidable Apto para refrigerador, congelador y lavavajillas.",
+    "precio": "6,350.00",
+    "1.png": "c0002-1.png",
+    "2.png": "c0002-2.png",
+    "3.png": "c0002-3.png",
+    "4.png": "c0002-4.png",
+    "categoria ": "cocina"
   }
 ]
