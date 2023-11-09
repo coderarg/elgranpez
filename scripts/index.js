@@ -1,7 +1,12 @@
 /*******************************************
               DOM y Variables 
 *******************************************/
-import './toggleMenu.js';
+
+
+const botonMenu = document.querySelector('#botonMenu');
+const toggleMenu = document.querySelector('#toggle-menu');
+const cerrarMenu = document.querySelector('#cerrarMenu');
+
 const buscarBotton = document.querySelector('#boton__buscar');
 const buscarInput = document.querySelector('#barra__buscar');
 const buscarLupa = document.querySelector('.buscar__logo');
@@ -9,6 +14,7 @@ const buscarLupa = document.querySelector('.buscar__logo');
 const numeroResultados = document.querySelector('#numero-resultados');
 const prodRoot = document.querySelector('#prod-root');
 let prodArray = [];
+const productos = [];
 
 const filtrosBTN = document.querySelector('#filtrosBTN')
 const filtros = document.querySelector('#filtros');
@@ -20,21 +26,30 @@ let filtrosOpen = false;
 let botonesProductos;
 let idElementoSeleccionado;
 
-/*******************************************
-              DOM y Variables 
-*******************************************/
 fetch("../datos/productos.json")
   .then(res => res.json())
   .then(json => {
     prodArray = [...json];
+    prodArray.forEach(p => productos.push(p))
     cargarProductos(prodArray);
   })
-
-
+  .then(()=> {
+    paginar();
+  })
 
 /*******************************************
                   Eventos
 *******************************************/
+botonMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+  toggleMenu.style.left = '0dvw';
+});
+
+cerrarMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+  toggleMenu.style.left = '100dvw';
+});
+
 buscarBotton.addEventListener('click', (e) => {
   e.preventDefault();
   buscarProductos();
@@ -86,9 +101,9 @@ categorias.forEach((cat) => {
   });
 });
 /*******************************************
-              Funciones
+                  Funciones
 *******************************************/
-const buscarProductos = () => {
+const buscarProductos = async () => {
 
   const palabrasInput = [];
   const productosDuplicados = [];
@@ -175,7 +190,20 @@ const cargarBotonesProductos = () => {
   })
 }
 
+const paginar = () => {
+  const productosActivos = [];
+  productos.forEach((p) => {
+    if(p.activo === 1) productosActivos.push(p)
+  })
 
+  let cantPaginas = Math.ceil(productosActivos.length/20);
+  console.log(cantPaginas);
+
+  for(const i = 1; i <= cantPaginas; i++) {
+    
+  }
+
+}
 
 // Encontrar los productos y guardarlos en una variable
 // Identificar cada producto cuando es clickeado
