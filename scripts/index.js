@@ -32,9 +32,7 @@ fetch("../datos/productos.json")
     prodArray = [...json];
     prodArray.forEach(p => productos.push(p))
     cargarProductos(prodArray);
-  })
-  .then(()=> {
-    paginar();
+    console.log(prodArray);
   })
 
 /*******************************************
@@ -197,11 +195,6 @@ const paginar = () => {
   })
 
   let cantPaginas = Math.ceil(productosActivos.length/20);
-  console.log(cantPaginas);
-
-  for(const i = 1; i <= cantPaginas; i++) {
-    
-  }
 
 }
 
